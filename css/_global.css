@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #0C1014;
+  --red: #D90000;
+  --pink: #E5266E;
+  --blue: #0848C0;
+  --grey: #D6DADE;
+  --text-grey: #6A6E72;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans-Bold"),
+    url("../fonts/PTSans-Bold.woff") format("woff"),
+    url("../fonts/PTSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans-Regular"),
+    url("../fonts/PTSans-Regular.woff") format("woff"),
+    url("../fonts/PTSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-ExtraBold"),
+    url("../fonts/Montserrat-ExtraBold.woff") format("woff"),
+    url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: local("Lato-Semibold"),
+    url("../fonts/Lato-Semibold.woff") format("woff"),
+    url("../fonts/Lato-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: 'PTSans', 'Montserrat', 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  padding-top: 30px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 160px;
+  padding-left: 160px;
+}
+
+.blur {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black);
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-wrap {
+  margin-bottom: 20px;
+}
+
+.button-modal {
+  padding: 15px;
+  min-width: 147px;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  border-radius: 4px;
+  opacity: 1;
+  background-color: transparent;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  color: var(--white);
+  background-color: var(--pink);
+  opacity: 1;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.button-modal:active {
+  opacity: 0.5;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
