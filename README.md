@@ -1,5 +1,4 @@
-# Одно из тестовых заданий
-  Модальное окно, тестовое задание на время.
-  Условием было выполнить без библиотек максимально быстро по десктоп макету.
-  Адаптивно, работает небольшая валидация, маска на телефон.
-  Работа с файлом с изображением, пользователь видит, что он добавил.
+# Modal window
+  The condition was to complete it without libraries as quickly as possible using a desktop layout.
+  Adaptive, a small validation works, a mask on the phone.
+  Working with an image file, the user sees what he added.
